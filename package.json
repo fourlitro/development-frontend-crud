@@ -5,7 +5,7 @@
   "main": "./src/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:sass": "node-sass assets/scss/styles.scss assets/css/styles.css --output-style expanded --watch",
+    "watch:sass": "node-sass src/assets/scss/styles.scss src/assets/css/styles.css --output-style expanded --watch",
     "serve": "live-server",
     "start": "concurrently  \" npm run watch:sass \" \" npm run serve \" "
   },
