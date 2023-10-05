@@ -1,11 +1,13 @@
+@import 'variables';
+
 header {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: $header-background-color;
-  box-shadow: 0 8px 8px -4px #bababa;
-  color: $header-font-color;
+  background-color: $color-tertiary;
+  box-shadow: 0 8px 8px -4px rgb(186, 186, 186);
+  color: $font-color-light;
   text-align: center;
   font-size: 1.25rem;
   line-height: 1.25rem;
@@ -38,7 +40,7 @@ header {
 
       a {
         text-decoration: none;
-        color: $header-font-color;
+        color: $font-color-light;
         font-weight: bold;
       }
 

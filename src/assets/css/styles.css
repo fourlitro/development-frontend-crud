@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Jost");
 * {
   margin: 0;
@@ -9,7 +10,7 @@ body {
   background-color: #f3f6f9;
   font-family: "Jost", sans-serif;
   font-size: 14px;
-  color: #252f4a;
+  color: #283848;
   margin: 0;
 }
 
@@ -64,7 +65,7 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #3aa99e;
+  background-color: #5ebaa6;
   box-shadow: 0 8px 8px -4px #bababa;
   color: #fff;
   text-align: center;
@@ -126,4 +127,119 @@ header nav a {
   header nav li {
     margin-right: 0;
   }
+}
+
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+  font-size: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table thead tr {
+  background-color: #354a5f;
+  color: #fff;
+  text-align: left;
+}
+
+table thead tr th {
+  border: none;
+  font-size: 1.125rem;
+  padding: 2rem 1.25rem;
+  white-space: nowrap;
+}
+
+table tbody tr {
+  border-bottom: none;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #f3f6f9;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 4px solid #354a5f;
+}
+
+table tbody tr td {
+  padding: 1rem 1.25rem;
+  border: none;
+  white-space: wrap;
+}
+
+table tbody tr td img {
+  max-width: 100px;
+  height: auto;
+}
+
+#message-not-found {
+  text-align: center;
+  font-size: 1rem;
+  padding: 2rem;
+}
+
+/* Estilos para la sección de filtros */
+#filter-section {
+  background-color: white;
+  padding: 2rem;
+  border: none;
+  border: 1px solid #d1dde8;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  border-radius: 3px;
+}
+
+/* Estilos para los campos de filtro */
+input[type="text"],
+input[type="number"] {
+  flex-grow: 1;
+  min-width: 200px;
+  font-size: 1rem;
+  padding: 1rem;
+  border: 1px solid #d1dde8;
+  border-radius: 3px;
+}
+
+input[type="text"]:focus, input[type="text"]:hover, input[type="text"]:active,
+input[type="number"]:focus,
+input[type="number"]:hover,
+input[type="number"]:active {
+  border: 1px solid #354a5f;
+}
+
+/* Estilos para el botón del filtro */
+button {
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+}
+
+button#apply-filters {
+  background-color: #3398db;
+  color: #fff;
+}
+
+button#apply-filters:hover {
+  background-color: #217dba;
+}
+
+button#reset-filters {
+  background-color: #f3f6f9;
+  color: #283848;
+}
+
+button#reset-filters:hover {
+  background-color: #e2e9f1;
 }
