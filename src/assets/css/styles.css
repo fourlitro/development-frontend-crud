@@ -178,7 +178,7 @@ table tbody tr td img {
   height: auto;
 }
 
-#message-not-found {
+#message {
   display: none;
   text-align: center;
   font-size: 1rem;
