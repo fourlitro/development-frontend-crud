@@ -5,9 +5,9 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:sass": "node-sass src/assets/scss/styles.scss src/assets/css/styles.css --output-style expanded --watch",
+    "start": "concurrently \"npm run watch:sass\" \"npm run serve\"",
     "serve": "live-server src",
-    "start": "concurrently  \" npm run watch:sass \" \" npm run serve \" "
+    "watch:sass": "node-sass --output-style expanded src/assets/scss/styles.scss src/assets/css/styles.css --watch"
   },
   "author": "Alexis Suarez",
   "license": "MIT",
