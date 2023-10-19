@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Jost");
 * {
   margin: 0;
@@ -191,7 +190,6 @@ table tbody tr td img {
   padding: 2rem;
 }
 
-/* Estilos para la sección de filtros */
 .filter-section {
   background-color: white;
   padding: 1.5rem;
@@ -220,7 +218,6 @@ table tbody tr td img {
   flex-direction: column;
 }
 
-/* Estilos para los campos de filtro */
 input,
 textarea,
 select {
@@ -257,7 +254,6 @@ select {
   min-width: 200px;
 }
 
-/* Estilos para el botón del filtro */
 button {
   border: none;
   border-radius: 3px;
@@ -266,6 +262,15 @@ button {
   transition: background-color 0.3s;
   font-size: 1rem;
   padding: 1rem 1.5rem;
+}
+
+button.btn {
+  background-color: #f3f6f9;
+  color: #283848;
+}
+
+button.btn:hover {
+  background-color: #e2e9f1;
 }
 
 button.btn-action {
@@ -286,13 +291,14 @@ button.btn-submit:hover {
   background-color: #217dba;
 }
 
-button.btn {
-  background-color: #f3f6f9;
-  color: #283848;
+button.btn-delete {
+  background-color: white;
+  border: 2px solid #c77070;
+  color: #c77070;
 }
 
-button.btn:hover {
-  background-color: #e2e9f1;
+button.btn-delete:hover {
+  background-color: #fcf8f8;
 }
 
 .modal-background {

@@ -1,6 +1,6 @@
 @import './variables';
 
-/* Estilos para la sección de filtros */
+
 .filter-section {
   background-color: white;
   padding: 1.5rem;
@@ -31,7 +31,7 @@
   flex-direction: column;
 }
 
-/* Estilos para los campos de filtro */
+
 input,
 textarea,
 select {
@@ -63,7 +63,7 @@ select {
   min-width: 200px;
 }
 
-/* Estilos para el botón del filtro */
+
 button {
   border: none;
   border-radius: 3px;
@@ -72,6 +72,15 @@ button {
   transition: background-color 0.3s;
   font-size: 1rem;
   padding: 1rem 1.5rem;
+
+  &.btn {
+    background-color: $background-color;
+    color: $font-color;
+  }
+
+  &.btn:hover {
+    background-color: darken($background-color, 5%);
+  }
 
   &.btn-action {
     background-color: $color-primary;
@@ -91,13 +100,14 @@ button {
     background-color: darken($color-secondary, 10%);
   }
 
-  &.btn {
-    background-color: $background-color;
-    color: $font-color;
+  &.btn-delete {
+    background-color: white;
+    border: 2px solid $color-warning;
+    color: $color-warning;
   }
 
-  &.btn:hover {
-    background-color: darken($background-color, 5%);
+  &.btn-delete:hover {
+    background-color: lighten($color-warning, 37%);
   }
 
 }
